@@ -3,7 +3,7 @@ package Main;
 public class String_Calculator {
 	public int Add(String numbers)
 	{
-		String[] arr = numbers.split(",");
+		String[] arr = numbers.split(",|\n");
 		int result = 1;char ch = ',';
 		if(numbers.isEmpty())
 		{

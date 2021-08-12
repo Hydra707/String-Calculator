@@ -25,6 +25,6 @@ public class Test_String_Calculator
 	}
 	@Test
 	public void NewLine_Between_numbers() {
-		assertEquals(obj.Add("1,2,\n3"), 6);
+		assertEquals(obj.Add("1,2\n3"), 6);
 	}
 }
