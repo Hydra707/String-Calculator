@@ -9,3 +9,5 @@ Following are the requirements :
 3. Two integers will be added and sum will be returned. fails
 
 4. Only_integer test failed after refactoring for requirement 3.
+
+5. 0, 1 and 2 inputs are taken when separeated by comma --> ",".passed
