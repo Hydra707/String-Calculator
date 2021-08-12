@@ -17,3 +17,7 @@ Following are the requirements :
 7. Add also Hanldes "\n" between numbers --> passed.
 
 8. Default delimiter is set inside string. -->passed.
+
+9. Negative numbers will throw an exception "negatives not allowed". passed..
+
+1.. Negative numbers will also throw exception along with negative numbers. passed

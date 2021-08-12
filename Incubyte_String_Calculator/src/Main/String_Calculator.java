@@ -1,7 +1,7 @@
 package Main;
 
 public class String_Calculator {
-	public int Add(String numbers)
+	public int Add(String numbers) throws Exception
 	{
 		String[] arr = Chop_String(numbers,",|\n");
 		int result = 1;char ch = ',';
@@ -41,8 +41,17 @@ public class String_Calculator {
 			}
 		return Iarr;
 	}
-	private static int add_array(int Arr[]) 
+	private static int add_array(int Arr[]) throws Exception
 	{
+		String str = "";
+		for(int itr : Arr) {
+			if(itr<0) {
+				str = str+ " " + String.valueOf(itr) + " ";
+			}
+		}
+		if(str!="") {
+			throw new RuntimeException("negatives not allowed" + str);
+		}
 		int sum = 0;
 		for(int i=0;i<Arr.length;i++) 
 		{
