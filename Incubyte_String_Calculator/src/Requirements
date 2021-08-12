@@ -3,3 +3,5 @@ Since i am following TDD i will be reading requirements one by one.
 Following are the requirements : 
 
 1. Empty string should return 0 -- > passed.
+
+2. Single number will return the number itself --> passed.
