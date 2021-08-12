@@ -29,6 +29,6 @@ public class Test_String_Calculator
 	}
 	@Test
 	public void Default_Delimiter() {
-		assertEquals(obj.Add("//;\\n1;2"), 3);
+		assertEquals(obj.Add("//;\n1;2"), 3);
 	}
 }

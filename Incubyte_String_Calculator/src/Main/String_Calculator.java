@@ -3,7 +3,7 @@ package Main;
 public class String_Calculator {
 	public int Add(String numbers)
 	{
-		String[] arr = numbers.split(",|\n");
+		String[] arr = Chop_String(numbers,",|\n");
 		int result = 1;char ch = ',';
 		if(numbers.isEmpty())
 		{
@@ -13,11 +13,23 @@ public class String_Calculator {
 		{
 			result = Integer.parseInt(numbers);
 		}
+		else if(numbers.startsWith("//")) 
+		{
+			String[] body = numbers.split("\n", 2);
+			String delimiter = body[0].substring(2); 
+			numbers = body[1];
+			result = add_array(Array_Conversion(Chop_String(numbers, delimiter)));
+		}
 		else
 		{
 			result = add_array(Array_Conversion(arr));
 		}
 		return result;
+	}
+	private static String[] Chop_String(String num, String delimiter) 
+	{
+		String [] arr = num.split(delimiter);
+		return arr;
 	}
 	private static int[] Array_Conversion(String Sarr[]) 
 	{
