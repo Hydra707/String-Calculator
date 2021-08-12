@@ -7,3 +7,5 @@ Following are the requirements :
 2. Single number will return the number itself --> failed, then improved to be passed.
 
 3. Two integers will be added and sum will be returned. fails
+
+4. Only_integer test failed after refactoring for requirement 3.

@@ -6,8 +6,11 @@ public class String_Calculator {
 		int result = 1;
 		if(numbers.isEmpty())
 			result = 0;
-		else
-			result =Integer.parseInt(numbers);
+		else 
+		{
+			String[] arr = numbers.split(",");
+			result = Integer.parseInt(arr[0]) + Integer.parseInt(arr[1]);
+		}
 		return result;
 	}
 
