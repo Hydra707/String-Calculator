@@ -13,3 +13,5 @@ Following are the requirements :
 5. 0, 1 and 2 inputs are taken when separeated by comma --> ",".passed
 
 6. Allow the program to handle any number of inputs.-->passed
+
+7. Add also Hanldes "\n" between numbers --> 

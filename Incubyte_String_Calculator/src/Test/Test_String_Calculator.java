@@ -21,6 +21,10 @@ public class Test_String_Calculator
 	}
 	@Test
 	public void Unknown_numbers() {
-		assertEquals(obj.Add("14,7,4,0,90"),115);
+		assertEquals(obj.Add("14,7,4,0,90"), 115);
+	}
+	@Test
+	public void NewLine_Between_numbers() {
+		assertEquals(obj.Add("1,2,\n3"), 6);
 	}
 }
