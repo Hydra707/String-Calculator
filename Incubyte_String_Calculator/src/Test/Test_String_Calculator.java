@@ -27,4 +27,8 @@ public class Test_String_Calculator
 	public void NewLine_Between_numbers() {
 		assertEquals(obj.Add("1,2\n3"), 6);
 	}
+	@Test
+	public void Default_Delimiter() {
+		assertEquals(obj.Add("//;\\n1;2"), 3);
+	}
 }

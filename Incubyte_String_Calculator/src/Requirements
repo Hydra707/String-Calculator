@@ -15,3 +15,5 @@ Following are the requirements :
 6. Allow the program to handle any number of inputs.-->passed
 
 7. Add also Hanldes "\n" between numbers --> passed.
+
+8. Default delimiter is set inside string. -->
