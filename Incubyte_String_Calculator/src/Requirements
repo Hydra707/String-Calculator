@@ -2,6 +2,8 @@ Since i am following TDD i will be reading requirements one by one.
 
 Following are the requirements : 
 
-1. Empty string should return 0 -- > passed.
+1. Empty string should return 0 -- > failed, then improved to be passed.
 
-2. Single number will return the number itself --> passed.
+2. Single number will return the number itself --> failed, then improved to be passed.
+
+3. Two integers will be added and sum will be returned. fails

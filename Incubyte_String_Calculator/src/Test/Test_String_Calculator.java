@@ -11,8 +11,12 @@ public class Test_String_Calculator
 	public void String_is_Empty() {
 		assertEquals(obj.Add(""), 0);
 	}
+	@Test
 	public void Only_single_integer() {
 		assertEquals(obj.Add("678"), 678);
 	}
-
+	@Test
+	public void Double_integer() {
+		assertEquals(obj.Add("1,2"), 3);
+	}
 }
