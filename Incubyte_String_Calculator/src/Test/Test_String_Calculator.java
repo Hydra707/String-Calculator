@@ -19,4 +19,8 @@ public class Test_String_Calculator
 	public void Double_integer() {
 		assertEquals(obj.Add("1,2"), 3);
 	}
+	@Test
+	public void Unknown_numbers() {
+		assertEquals(obj.Add("14,7,4,0,90"),115);
+	}
 }

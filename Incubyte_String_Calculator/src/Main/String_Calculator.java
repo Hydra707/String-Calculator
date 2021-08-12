@@ -15,9 +15,27 @@ public class String_Calculator {
 		}
 		else
 		{
-			result = Integer.parseInt(arr[0]) + Integer.parseInt(arr[1]);
+			result = add_array(Array_Conversion(arr));
 		}
 		return result;
 	}
-
+	private static int[] Array_Conversion(String Sarr[]) 
+	{
+		int[] Iarr = new int[Sarr.length];
+		
+		for(int i=0;i<Iarr.length;i++) 
+		{
+			Iarr[i] = Integer.parseInt(Sarr[i]);
+			}
+		return Iarr;
+	}
+	private static int add_array(int Arr[]) 
+	{
+		int sum = 0;
+		for(int i=0;i<Arr.length;i++) 
+		{
+			sum = sum + Arr[i];
+		}
+		return sum;
+	}
 }

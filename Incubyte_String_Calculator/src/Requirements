@@ -11,3 +11,5 @@ Following are the requirements :
 4. Only_integer test failed after refactoring for requirement 3.
 
 5. 0, 1 and 2 inputs are taken when separeated by comma --> ",".passed
+
+6. Allow the program to handle any number of inputs.-->passed
